@@ -1,0 +1,2379 @@
+/* Reset css */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Fonts */
+
+@font-face {
+    font-family: 'Luckiest Guy';
+    src: url('../fonts/LuckiestGuy-Regular.eot');
+    src: url('../fonts/LuckiestGuy-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/LuckiestGuy-Regular.woff2') format('woff2'),
+    url('../fonts/LuckiestGuy-Regular.woff') format('woff'),
+    url('../fonts/LuckiestGuy-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pieces NFI';
+    src: url('../fonts/PiecesNFI.eot');
+    src: url('../fonts/PiecesNFI.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/PiecesNFI.woff2') format('woff2'),
+    url('../fonts/PiecesNFI.woff') format('woff'),
+    url('../fonts/PiecesNFI.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PF Isotext Pro';
+    src: url('../fonts/PFIsotextPro-Bold.eot');
+    src: url('../fonts/PFIsotextPro-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/PFIsotextPro-Bold.woff2') format('woff2'),
+    url('../fonts/PFIsotextPro-Bold.woff') format('woff'),
+    url('../fonts/PFIsotextPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Styles */
+
+body {
+    background-color: #240c26;
+}
+
+.lp-halloween {
+    background: url(../images/mainbg1.jpg)no-repeat;
+    width: 100%;
+    min-height: 100vh;
+    background-position: top center;
+    box-sizing: border-box;
+    max-width: 1902px;
+    margin: 0 auto;
+    padding-top: 18px;
+    display: none;
+}
+
+.lp-halloween__logo {
+    display: flex;
+    justify-content: center;
+    font-family: 'Luckiest Guy',sans-serif;
+    color: #24132a;
+    font-size: 22px;
+    padding-left: 29px;
+    position: relative;
+    z-index: 5;
+}
+
+/* Halloween Words */
+
+.lp-halloween__text {
+    font-family: 'Pieces NFI',sans-serif;
+    text-align: center;
+    width: 317px;
+    height: 116px;
+    text-shadow: 0 0 95px rgba(0, 83, 173, 0.46);
+    display: block;
+    margin: 39px auto 11px;
+    position: relative;
+}
+
+.lp-halloween__text:before {
+    background: white;
+    width: 154px;
+    height: 154px;
+    position: absolute;
+    content: '';
+    left: 94px;
+    border-radius: 100%;
+    top: -31px;
+    box-shadow: 0 0 44px -11px white;
+    transition: moon 3s ease-in;
+}
+
+.lp-halloween__text-elem {
+    font-style:normal;
+    white-space:pre;
+    overflow:visible;
+    padding:0;
+    color: #24132a;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 58px;
+    text-transform: uppercase;
+}
+
+.lp-halloween__text-elem.w1 {
+    transform: rotate(-6.6rad);
+    width: 21px;
+    height: 24px;
+    top: 0;
+    left: 12px;
+    position: absolute;
+    transform-origin: 50% 100%;
+    display: block;
+}
+
+.lp-halloween__text-elem.w2 {
+    transform: rotate(-6.4rad);
+    width: 21px;
+    height: 24px;
+    top: -9px;
+    left: 48px;
+    position: absolute;
+    transform-origin: 50% 100%;
+    display: block;
+}
+
+.lp-halloween__text-elem.w3 {
+    transform: rotate(-6.4rad);
+    width: 21px;
+    height: 24px;
+    top: -15px;
+    left: 83px;
+    position: absolute;
+    transform-origin:50% 100%;
+    display: block;
+}
+
+.lp-halloween__text-elem.w4 {
+    transform: rotate(-6.4rad);
+    width: 21px;
+    height: 24px;
+    top: -18px;
+    left: 112px;
+    position: absolute;
+    transform-origin:50% 100%;
+    display: block;
+}
+
+.lp-halloween__text-elem.w5 {
+    transform: rotate(0rad);
+    width: 21px;
+    height: 24px;
+    top: -19px;
+    left: 140px;
+    position: absolute;
+    transform-origin:50% 100%;
+    display: block;
+}
+
+.lp-halloween__text-elem.w6 {
+    transform: rotate(0.09rad);
+    width: 21px;
+    height: 24px;
+    top: -20px;
+    left: 174px;
+    position: absolute;
+    transform-origin: 50% 100%;
+    display: block;
+}
+
+.lp-halloween__text-elem.w7 {
+    transform: rotate(0.2rad);
+    width: 21px;
+    height: 24px;
+    top: -15px;
+    left: 231px;
+    position: absolute;
+    transform-origin: 50% 100%;
+    display: block;
+}
+
+.lp-halloween__text-elem.w8 {
+    transform: rotate(0.2rad);
+    width: 21px;
+    height: 24px;
+    top: -9px;
+    left: 260px;
+    position: absolute;
+    transform-origin:50% 100%;
+    display: block;
+}
+
+.lp-halloween__text-elem.w9 {
+    transform: rotate(0.24rad);
+    width: 21px;
+    height: 24px;
+    top: -3px;
+    left: 287px;
+    position: absolute;
+    transform-origin:50% 100%;
+    display: block;
+}
+
+.lp-halloween__text-elem.w10 {
+    transform: rotate(-6.33rad);
+    width: 21px;
+    height: 24px;
+    top: 42px;
+    left: 106px;
+    position: absolute;
+    transform-origin:50% 100%;
+    display: block;
+}
+
+.lp-halloween__text-elem.w11 {
+    transform: rotate(-6.3rad);
+    width: 21px;
+    height: 24px;
+    top: 42px;
+    left: 134px;
+    position: absolute;
+    transform-origin:50% 100%;
+    display: block;
+}
+
+.lp-halloween__text-elem.w12 {
+    transform: rotate(-6.3rad);
+    width: 21px;
+    height: 24px;
+    top: 40px;
+    left: 150px;
+    position: absolute;
+    transform-origin:50% 100%;
+    display: block;
+}
+
+.lp-halloween__text-elem.w13 {
+    transform: rotate(-6.3rad);
+    width: 21px;
+    height: 24px;
+    top: 40px;
+    left: 176px;
+    position: absolute;
+    transform-origin:50% 100%;
+    display: block;
+}
+
+.lp-halloween__text-elem.w14 {
+    transform: rotate(-6.18rad);
+    width: 21px;
+    height: 24px;
+    top: 40px;
+    left: 206px;
+    position: absolute;
+    transform-origin:50% 100%;
+    display: block;
+}
+
+
+
+.lp-halloween__text-elem.w10.lp-halloween__text-elem-de_w10 {
+    top: 54px;
+    left: 39px;
+    transform: rotate(-6.6rad);
+}
+
+.lp-halloween__text-elem.w11.lp-halloween__text-elem-de_w11 {
+    top: 45px;
+    left: 77px;
+    transform: rotate(-6.4rad);
+}
+
+.lp-halloween__text-elem.w12.lp-halloween__text-elem-de_w12 {
+    top: 38px;
+    left: 111px;
+}
+
+.lp-halloween__text-elem.w13.lp-halloween__text-elem-de_w13 {
+    top: 36px;
+    left: 146px;
+    transform: rotate(6.3rad);
+}
+
+.lp-halloween__text-elem.w14.lp-halloween__text-elem-de_w14 {
+    top: 39px;
+    left: 180px;
+    transform: rotate(-6.25rad);
+}
+
+.lp-halloween__text-elem.w10.lp-halloween__text-elem-fi_w10 {
+    top: 48px;
+    left: 83px;
+    transform: rotate(-6.5rad);
+}
+
+.lp-halloween__text-elem.w11.lp-halloween__text-elem-fi_w11 {
+    top: 42px;
+    left: 115px;
+    transform: rotate(-6.4rad);
+}
+
+.lp-halloween__text-elem.w12.lp-halloween__text-elem-fi_w12 {
+    top: 38px;
+    left: 157px;
+}
+
+.lp-halloween__text-elem.w13.lp-halloween__text-elem-fi_w13 {
+    top: 36px;
+    left: 197px;
+    transform: rotate(6.3rad);
+}
+
+.lp-halloween__text-elem.w14.lp-halloween__text-elem-fi_w14 {
+    top: 41px;
+    left: 230px;
+    transform: rotate(-6.1rad);
+}
+
+.lp-halloween__text-elem.w10.lp-halloween__text-elem-nl_w10 {
+    top: 48px;
+    left: 68px;
+    transform: rotate(-6.5rad);
+}
+
+.lp-halloween__text-elem.w11.lp-halloween__text-elem-nl_w11 {
+    top: 42px;
+    left: 101px;
+    transform: rotate(-6.4rad);
+}
+
+.lp-halloween__text-elem.w12.lp-halloween__text-elem-nl_w12 {
+    top: 38px;
+    left: 142px;
+}
+
+.lp-halloween__text-elem.w13.lp-halloween__text-elem-nl_w13 {
+    top: 38px;
+    left: 178px;
+    transform: rotate(6.3rad);
+}
+
+.lp-halloween__text-elem.w14.lp-halloween__text-elem-nl_w14 {
+    top: 39px;
+    left: 213px;
+    transform: rotate(-6.1rad);
+}
+
+.lp-halloween__text-elem.w15.lp-halloween__text-elem-nl_w15 {
+    top: 45px;
+    left: 249px;
+    transform: rotate(-6.1rad);
+    position: absolute;
+}
+
+.lp-halloween__text-elem.w15.lp-halloween__text-elem-de_w15 {
+    top: 41px;
+    left: 218px;
+    position: absolute;
+    transform: rotate(-6.2rad);
+}
+
+.lp-halloween__text-elem.w16.lp-halloween__text-elem-de_w16 {
+    top: 48px;
+    left: 247px;
+    position: absolute;
+    transform: rotate(-6.1rad);
+}
+
+.lp-halloween__text-elem.w17.lp-halloween__text-elem-de_w17 {
+    top: 53px;
+
+    left: 282px;
+    position: absolute;
+    transform: rotate(-6.07rad);
+}
+
+.lp__container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.lp-halloween-section-bar {
+    width: 294px;
+    border-radius: 10px;
+    height: 42px;
+    border: 2px solid #fcc87e;
+    font-family: 'Luckiest Guy',sans-serif;
+    color: white;
+    position: relative;
+    background: hsla(35, 81%, 23%, 0.45);
+    line-height: 39px;
+    margin: 0 auto;
+    left: 15px;
+    box-shadow: 0 0 7px 8px rgba(173, 37, 0, 0.34);
+    box-sizing: border-box;
+    text-shadow: 0px 2px 0px rgb(169, 131, 84), 0px -1px 0px rgb(232, 199, 157)
+}
+
+.lp-halloween-section-bar__progress {
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0;
+    transition: width .5s ease-in;
+    border-radius: 5px 0 0 5px;
+    background: rgb(228,165,117);
+    background: linear-gradient(45deg, rgba(228,165,117,1) 0%, rgba(255,203,102,1) 42%, rgba(252,200,126,1) 100%);
+}
+
+.lp-halloween-section-bar__text {
+    display: block;
+    font-size: 23px;
+    height: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.lp-halloween-section-bar__text_fi {
+    font-size: 22px;
+}
+
+.lp-halloween__attempt-number {
+    width: 37px;
+    height: 36px;
+    background: url(../images/rescandy.png)no-repeat;
+    display: inline-block;
+    margin-left: -5px;
+}
+
+.step1 {
+    background: url(../images/stepcandy.png)no-repeat;
+}
+
+.lp-halloween-section {
+    width: 585px;
+    margin: -25px auto 0;
+}
+
+.lp-halloween-section-candles {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 10;
+}
+
+.lp-halloween-section-candles__before {
+    background: url(../images/svechiall.png);
+    width: 562px;
+    height: 70px;
+}
+
+.lp-halloween-section-candles__fire {
+    background: url(../images/svechi1fire.png);
+    width: 205px;
+    height: 81px;
+    transition: opacity 1s ease-in;
+}
+
+.lp-halloween-section-candles__all {
+    background: url(../images/svechiallfire.png);
+    width: 558px;
+    height: 91px;
+    transition: opacity 1s ease-in;
+}
+
+.lp-halloween-section-candles__fire {
+    opacity: 0;
+    left: 13px;
+    position: absolute;
+    top: -11px;
+    pointer-events: none;
+}
+
+.lp-halloween-section-candles__all {
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    top: -17px;
+    right: 9px;
+}
+
+.lp-halloween-section-gamble {
+    background: url(../images/gamblec.jpg)no-repeat;
+    background-size: 100% 100%;
+    margin-top: -19px;
+    height: 404px;
+    padding: 28px 5px 26px 32px;
+    position: relative;
+    border-radius: 22px;
+}
+
+.lp-halloween-section-gamble__hand {
+    position: absolute;
+    right: -57px;
+    background: url(../images/kotel2.png)no-repeat;
+    width: 114px;
+    height: 469px;
+    top: 57px;
+    z-index: 13;
+    pointer-events: none;
+}
+
+.lp-halloween-section-gamble__tykva {
+    position: absolute;
+    left: -15px;
+    background: url(../images/tykva.png)no-repeat;
+    z-index: 13;
+    pointer-events: none;
+    width: 141px;
+    height: 191px;
+    top: 287px;
+}
+
+.lp-halloween-section-gamble-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 529px;
+    height: 404px;
+    margin-left: -3px;
+
+}
+
+.lp-halloween-section-gamble-content-item {
+    text-align: center;
+    width: 176px;
+    height: 134px;
+    cursor: pointer;
+    position: relative;
+    font-family: 'Luckiest Guy',sans-serif;
+    box-sizing: border-box;
+}
+
+.lp-halloween-section-gamble-content-item1 {
+    border-top-left-radius: 23px;
+    border-bottom: 1px dashed #50006f;
+    border-right: 1px dashed #50006f;
+}
+
+.lp-halloween-section-gamble-content-item1.selected {
+    border-top-left-radius: 23px;
+    border-bottom: 1px solid #50006f;
+    border-right: 1px solid #50006f;
+}
+
+
+.lp-halloween-section-gamble-content-item1.lp-halloween-section-gamble__80spins,
+.lp-halloween-section-gamble-content-item1.lp-halloween-section-gamble__empty,
+.lp-halloween-section-gamble-content-item1.lp-halloween-section-gamble__280spins {
+    border-top-left-radius: 12px;
+}
+
+.lp-halloween-section-gamble-content-item1.lp-halloween-section-gamble__80spins_de,
+.lp-halloween-section-gamble-content-item1.lp-halloween-section-gamble__empty_de,
+.lp-halloween-section-gamble-content-item1.lp-halloween-section-gamble__280spins_de {
+    border-top-left-radius: 12px;
+}
+
+.lp-halloween-section-gamble-content-item1.lp-halloween-section-gamble__80spins_nl,
+.lp-halloween-section-gamble-content-item1.lp-halloween-section-gamble__empty_nl,
+.lp-halloween-section-gamble-content-item1.lp-halloween-section-gamble__280spins_nl {
+    border-top-left-radius: 12px;
+}
+
+.lp-halloween-section-gamble-content-item1.lp-halloween-section-gamble__80spins_fi,
+.lp-halloween-section-gamble-content-item1.lp-halloween-section-gamble__empty_fi,
+.lp-halloween-section-gamble-content-item1.lp-halloween-section-gamble__280spins_fi {
+    border-top-left-radius: 12px;
+}
+
+.lp-halloween-section-gamble-content-item2 {
+    border-bottom: 1px dashed #50006f;
+    border-right: 1px dashed #50006f;
+}
+
+.lp-halloween-section-gamble-content-item2.selected {
+    border-bottom: 1px solid #50006f;
+    border-right: 1px solid #50006f;
+}
+
+.lp-halloween-section-gamble-content-item3 {
+    border-top-right-radius: 12px;
+    border-bottom: 1px dashed #50006f;
+}
+
+.lp-halloween-section-gamble-content-item3.selected {
+    border-bottom: 1px solid #50006f;
+}
+
+.lp-halloween-section-gamble-content-item4 {
+    border-bottom: 1px dashed #50006f;
+    border-right: 1px dashed #50006f;
+}
+
+.lp-halloween-section-gamble-content-item4.selected {
+    border-bottom: 1px solid #50006f;
+    border-right: 1px solid #50006f;
+}
+
+.lp-halloween-section-gamble-content-item5 {
+    border-right: 1px dashed #50006f;
+    border-bottom: 1px dashed #50006f;
+}
+
+.lp-halloween-section-gamble-content-item5.selected {
+    border-right: 1px solid #50006f;
+    border-bottom: 1px solid #50006f;
+}
+
+.lp-halloween-section-gamble-content-item6 {
+    border-bottom: 1px dashed #50006f;
+}
+
+.lp-halloween-section-gamble-content-item6.selected {
+    border-bottom: 1px solid #50006f;
+}
+
+.lp-halloween-section-gamble-content-item7 {
+    border-bottom-left-radius: 23px;
+    border-right: 1px dashed #50006f;
+}
+
+.lp-halloween-section-gamble-content-item7.selected {
+    border-right: 1px solid #50006f;
+}
+
+.lp-halloween-section-gamble-content-item8 {
+    border-right: 1px dashed #50006f;
+}
+
+.lp-halloween-section-gamble-content-item8.selected {
+    border-right: 1px solid #50006f;
+}
+
+.lp-halloween-section-gamble-content-item-wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.lp-halloween-section-gamble__80spins {
+    background: url(../images/90spins.jpg)no-repeat;
+    pointer-events: none;
+    background-position: center center;
+    background-color: #5d0183;
+}
+
+.lp-halloween-section-gamble__80spins_de {
+    background: url(../images/90spins-de.jpg)no-repeat;
+    pointer-events: none;
+    background-position: center center;
+    background-color: #5d0183;
+}
+
+.lp-halloween-section-gamble__80spins_nl {
+    background: url(../images/90spins-nl.jpg)no-repeat;
+    pointer-events: none;
+    background-position: center center;
+    background-color: #5d0183;
+}
+
+.lp-halloween-section-gamble__80spins_fi {
+    background: url(../images/90spins-fi.jpg)no-repeat;
+    pointer-events: none;
+    background-position: center center;
+    background-color: #5d0183;
+}
+
+.lp-halloween-section-gamble__empty {
+    background: url(../images/empty.jpg)no-repeat;
+    pointer-events: none;
+    background-position: center center;
+    background-color: #5d0183;
+}
+
+.lp-halloween-section-gamble__empty_de {
+    background: url(../images/empty-de.jpg)no-repeat;
+    pointer-events: none;
+    background-position: center center;
+    background-color: #5d0183;
+}
+
+.lp-halloween-section-gamble__empty_nl {
+    background: url(../images/empty-nl.jpg)no-repeat;
+    pointer-events: none;
+    background-position: center center;
+    background-color: #5d0183;
+}
+
+
+.lp-halloween-section-gamble__empty_fi {
+    background: url(../images/empty-fi.jpg)no-repeat;
+    pointer-events: none;
+    background-position: center center;
+    background-color: #5d0183;
+}
+
+.lp-halloween-section-gamble__280spins {
+    background: url(../images/280spins.jpg)no-repeat;
+    pointer-events: none;
+    background-position: center center;
+    background-color: #5d0183;
+}
+
+.lp-halloween-section-gamble__280spins_de {
+    background: url(../images/280spins-de.jpg)no-repeat;
+    pointer-events: none;
+    background-position: center center;
+    background-color: #5d0183;
+}
+
+.lp-halloween-section-gamble__280spins_nl {
+    background: url(../images/280spins-nl.jpg)no-repeat;
+    pointer-events: none;
+    background-position: center center;
+    background-color: #5d0183;
+}
+
+.lp-halloween-section-gamble__280spins_fi {
+    background: url(../images/280spins-fi.jpg)no-repeat;
+    pointer-events: none;
+    background-position: center center;
+    background-color: #5d0183;
+}
+
+/* Loader */
+
+.lp-preloader{
+    position: fixed;
+    background-color: #26001c;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    pointer-events: none;
+}
+.lp-preload__img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.lp-halloween-section-gamble__speach {
+    position: absolute;
+    width: 391px;
+    height: 170px;
+    right: -89px;
+    top: -119px;
+    background: url(../images/speach.png)no-repeat;
+    padding-top: 28px;
+    margin: 0 auto;
+    opacity: 0;
+    text-align: left;
+    pointer-events: none;
+    z-index: 10;
+    transition: opacity 1s ease-in;
+}
+
+.lp-halloween-section-gamble__speach_fi {
+    background: url(../images/speach-fi.png)no-repeat;
+}
+
+.lp-halloween-section-gamble__speach_nl {
+    background: url(../images/speach-nl.png)no-repeat;
+}
+
+.lp-halloween-section-gamble__speach_de {
+    background: url(../images/speach-de.png)no-repeat;
+}
+
+.lp-halloween-section-gamble__speach-text {
+    padding: 20px 23px;
+}
+
+.lp-halloween-section-gamble__speach-text div {
+    font-size: 22px;
+    color: #24132a;
+    font-family: 'PF Isotext Pro',sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.lp-halloween-section-gamble__speach-text_left {
+    text-align: left;
+    padding-top: 5px;
+}
+
+.lp-halloween__info {
+    max-width: 350px;
+    margin: 0 auto;
+    padding-top: 27px;
+}
+
+/* Popup */
+
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background-color: rgba(8, 69, 145, .79);
+    top: 0;
+    left: 0;
+    z-index: 15;
+    align-items: center;
+    justify-content: center;
+    font-family: 'PF Isotext Pro',sans-serif;
+}
+.popup.popup__opened {
+    display: flex;
+}
+.popup__window {
+    position: relative;
+    width: 367px;
+    min-height: 446px;
+    background-color: #240c26;
+    border-radius: 12px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.popup__window:after {
+    position: absolute;
+    content: '';
+    bottom: -27px;
+    background: url(../images/modal-bottom-bg.png);
+    height: 38px;
+    width: 100%;
+}
+
+.lp-halloween__attempt {
+    font-family: 'Luckiest Guy',sans-serif;
+    font-size: 16px;
+    margin-top: 3px;
+    color: white;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 52px;
+}
+
+.lp-halloween__attempt-number_first {
+    margin-left: 12px;
+}
+
+.popup__header {
+    display: flex;
+    justify-content: center;
+}
+
+.popup-info {
+    padding: 37px 18px 0;
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 100%;
+}
+
+.popup-info__text {
+    color: white;
+    text-align: center;
+}
+
+.popup-info__text_padding {
+    padding-top: 7px;
+}
+
+
+.popup-info__text_color {
+    color: #ffe232;
+}
+
+.popup-info__btn {
+    font-weight: bold;
+    text-align: center;
+    min-height: 50px;
+    background: #fec117;
+    border-radius: 5px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 38px auto 0;
+    transition: all .3s ease-in;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.popup-info__btn:hover {
+    background: #f9ca49;
+}
+
+.popup-congrats {
+    font-family: 'Luckiest Guy',sans-serif;
+    font-size: 38px;
+    line-height: 148%;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    background: url(../images/congratsbg.jpg);
+    min-height: 80px;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    align-items: center;
+    position: relative;
+    text-shadow: 2px -2px 0 #CE5937, 2px -2px 0 #CE5937, 2px 2px 0 #CE5937, -2px 2px 0 #CE5937;
+}
+
+.popup-congrats:before {
+    position: absolute;
+    content: '';
+    background: url(../images/flag.png)no-repeat;
+    width: 36px;
+    height: 81px;
+    left: -36px;
+    top: 6px;
+}
+
+.popup-congrats:after {
+    position: absolute;
+    content: '';
+    background: url(../images/flag.png)no-repeat;
+    width: 36px;
+    height: 81px;
+    right: -36px;
+    transform: rotate(180deg);
+    top: 6px;
+}
+
+/* peel effect  */
+
+.sticker {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    z-index: 5;
+    width: 175px;
+    height: 134px;
+    transition: 0.2s 0.2s;
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: 1;
+    pointer-events: none;
+}
+.sticker .back, .sticker .front {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: 0.35s;
+}
+.sticker .back:before, .sticker .front:before {
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.35s;
+}
+.sticker .front {
+    height: 100%;
+}
+.sticker .front .content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.sticker .back {
+    top: 0;
+    overflow: hidden;
+}
+.sticker .back:before {
+    background-color: #50006f;
+    top: -134px;
+}
+
+.lp-halloween-section-gamble-content-item.selected .sticker {
+    transform: translate3d(10px, 20px, 0) scale(1.5) rotate(-45deg);
+    opacity: 0;
+}
+.lp-halloween-section-gamble-content-item.selected .sticker .front {
+    height: 0;
+}
+.lp-halloween-section-gamble-content-item.selected .sticker .back {
+    top: 130px;
+}
+.lp-halloween-section-gamble-content-item.selected .sticker .back:before {
+    top: 0;
+}
+
+.lp-halloween-section-gamble-content-item {
+    width: 176px;
+    height: 135px;
+    position: relative;
+}
+
+.lp-halloween-section-gamble-content-item.selected {
+    z-index: 10;
+}
+
+.lp-halloween-section-gamble-content-item.selected2 {
+    z-index: 11;
+}
+
+.lp-halloween-section-gamble-content-item.selected3 {
+    z-index: 12;
+}
+
+.content {
+    background-size: cover;
+}
+
+.content1 {
+    background: url(../images/spider1.jpg)no-repeat;
+    border-top-left-radius: 23px;
+}
+
+.lp-halloween-section-gamble-content-item1.lp-halloween-section-gamble__80spins,
+.lp-halloween-section-gamble-content-item1.lp-halloween-section-gamble__empty,
+.lp-halloween-section-gamble-content-item1.lp-halloween-section-gamble__280spins {
+    border-top-left-radius: 12px;
+}
+
+.content2 {
+    background: url(../images/spider2.jpg)no-repeat;
+}
+
+.content3 {
+    border-top-right-radius: 12px;
+    background: url(../images/spider3.jpg)no-repeat;
+}
+
+.content4 {
+    background: url(../images/spider4.jpg)no-repeat;
+}
+
+.content5 {
+    background: url(../images/spider5.jpg)no-repeat;
+}
+
+.content6 {
+    background: url(../images/spider6.jpg)no-repeat;
+}
+
+.content7 {
+    background: url(../images/spider7.jpg)no-repeat;
+    border-bottom-left-radius: 23px;
+}
+
+.content8 {
+    background: url(../images/spider8.jpg)no-repeat;
+}
+
+.content9 {
+    background: url(../images/spider9.jpg)no-repeat;
+}
+
+/* Footer */
+
+.lp-halloween-footer {
+    padding-top: 94px;
+}
+
+.lp-halloween-footer-row {
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    max-width: 600px;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.lp-halloween-footer-copyright {
+    padding-top: 26px;
+    padding-bottom: 45px;
+}
+
+.lp-halloween-footer-copyright-row {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.lp-halloween-footer-copyright-row__item_license {
+    margin-right: 20px;
+}
+
+.lp-halloween-footer-copyright-row__item_img:first-child {
+    padding-left: 37px;
+}
+
+.lp-halloween-footer-copyright-row__item_img {
+    width: 40px;
+}
+
+.lp-halloween-footer-copyright-row__item-text {
+    font-family: 'PF Isotext Pro',sans-serif;
+    color: #9a91aa;
+    font-size: 12px;
+    line-height: 100%;
+}
+
+/* Media queries */
+
+@media screen and (width: 1366px) {
+    .lp-halloween-section-gamble__hand {
+        right: -57px;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .lp-halloween__text-elem {
+        padding-top: 10px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .lp__container {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+    .lp-halloween-section-bar {
+        padding-top: 11px;
+        padding-bottom: 9px;
+        line-height: 1;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .lp-halloween {
+        background: url(../images/tabletbg.jpg)no-repeat;
+        padding-top: 46px;
+        background-position: top center;
+    }
+
+    .lp-halloween__logo {
+        font-size: 31px;
+    }
+    .lp-halloween__text:before {
+        width: 205px;
+        height: 205px;
+        top: -24px;
+        left: 66px;
+    }
+    .lp-halloween__text-elem.w1 {
+        top: 32px;
+        left: -45px;
+    }
+    .lp-halloween__text-elem {
+        font-size: 63px;
+    }
+    .lp-halloween__text-elem.w2 {
+        left: 2px;
+        top: 17px;
+    }
+    .lp-halloween__text-elem.w3 {
+        top: 7px;
+        left: 51px;
+    }
+    .lp-halloween__text-elem.w4 {
+        left: 88px;
+        top: 4px;
+        transform: rotate(-6.39rad);
+    }
+    .lp-halloween__text-elem.w5 {
+        top: 2px;
+        left: 130px;
+    }
+    .lp-halloween__text-elem.w6 {
+        top: -1px;
+        left: 177px;
+    }
+    .lp-halloween__text-elem.w7 {
+        left: 254px;
+        top: 3px;
+    }
+    .lp-halloween__text-elem.w8 {
+        top: 14px;
+        left: 297px;
+    }
+    .lp-halloween__text-elem.w9 {
+        top: 22px;
+        left: 334px;
+    }
+    .lp-halloween__text-elem.w10 {
+        top: 83px;
+        left: 83px;
+    }
+    .lp-halloween__text-elem.w11 {
+        top: 82px;
+        left: 126px;
+    }
+    .lp-halloween__text-elem.w12 {
+        top: 80px;
+        left: 147px;
+    }
+    .lp-halloween__text-elem.w13 {
+        top: 80px;
+        left: 182px;
+    }
+    .lp-halloween__text-elem.w14 {
+        top: 78px;
+        left: 220px;
+    }
+
+    .lp-halloween__text-elem.w10.lp-halloween__text-elem-nl_w10 {
+        top: 81px;
+        left: 41px;
+        transform: rotate(-6.5rad);
+    }
+
+    .lp-halloween__text-elem.w11.lp-halloween__text-elem-nl_w11 {
+        top: 76px;
+        left: 84px;
+        transform: rotate(-6.4rad);
+    }
+
+    .lp-halloween__text-elem.w12.lp-halloween__text-elem-nl_w12 {
+        top: 71px;
+        left: 136px;
+    }
+
+    .lp-halloween__text-elem.w13.lp-halloween__text-elem-nl_w13 {
+        top: 71px;
+        left: 180px;
+        transform: rotate(6.3rad);
+    }
+
+    .lp-halloween__text-elem.w14.lp-halloween__text-elem-nl_w14 {
+        top: 71px;
+        left: 221px;
+        transform: rotate(-6.2rad);
+    }
+
+    .lp-halloween__text-elem.w15.lp-halloween__text-elem-nl_w15 {
+        top: 78px;
+        left: 267px;
+        transform: rotate(-6.02rad);
+        position: absolute;
+    }
+
+    .lp-halloween__text-elem.w10.lp-halloween__text-elem-fi_w10 {
+        top: 87px;
+        left: 66px;
+    }
+
+    .lp-halloween__text-elem.w11.lp-halloween__text-elem-fi_w11 {
+        top: 81px;
+        left: 108px;
+    }
+
+    .lp-halloween__text-elem.w12.lp-halloween__text-elem-fi_w12 {
+        top: 76px;
+        left: 158px;
+    }
+
+    .lp-halloween__text-elem.w13.lp-halloween__text-elem-fi_w13 {
+        top: 76px;
+        left: 211px;
+    }
+
+    .lp-halloween__text-elem.w14.lp-halloween__text-elem-fi_w14 {
+        top: 79px;
+        left: 245px;
+    }
+
+    .lp-halloween__text-elem.w10.lp-halloween__text-elem-de_w10 {
+        top: 90px;
+        left: 22px;
+    }
+
+    .lp-halloween__text-elem.w11.lp-halloween__text-elem-de_w11 {
+        top: 81px;
+        left: 68px;
+    }
+
+    .lp-halloween__text-elem.w12.lp-halloween__text-elem-de_w12 {
+        top: 74px;
+        left: 104px;
+    }
+
+    .lp-halloween__text-elem.w13.lp-halloween__text-elem-de_w13 {
+        top: 73px;
+        left: 143px;
+    }
+
+    .lp-halloween__text-elem.w14.lp-halloween__text-elem-de_w14 {
+        top: 72px;
+        left: 183px;
+    }
+
+    .lp-halloween__text-elem.w15.lp-halloween__text-elem-de_w15 {
+        top: 70px;
+        left: 229px;
+    }
+
+    .lp-halloween__text-elem.w16.lp-halloween__text-elem-de_w16 {
+        top: 77px;
+        left: 266px;
+    }
+
+    .lp-halloween__text-elem.w17.lp-halloween__text-elem-de_w17 {
+        top: 88px;
+        left: 312px;
+    }
+
+    .lp-halloween-section-gamble__speach {
+        top: -233px;
+        right: 91px;
+    }
+    .lp-halloween-section {
+        margin-top: 117px;
+    }
+    .lp-halloween-section-gamble__hand {
+        background: url(../images/koteltab.png)no-repeat;
+        right: -33px;
+        top: 290px;
+        z-index: 13;
+        pointer-events: none;
+    }
+    .lp-halloween-section-gamble__tykva {
+        background: url(../images/tykvatab.png)no-repeat;
+        top: 477px;
+        left: -4px;
+        z-index: 13;
+        pointer-events: none;
+    }
+    .lp-halloween-section-gamble__80spins {
+        background: url(../images/90spinstab.jpg)no-repeat !important;
+        pointer-events: none;
+        background-position: center center;
+        background-color: #5d0183;
+    }
+
+    .lp-halloween-section-gamble__empty {
+        background: url(../images/emptytab.jpg)no-repeat !important;
+        pointer-events: none;
+        background-position: center center;
+        background-color: #5d0183;
+    }
+
+    .lp-halloween-section-gamble__280spins {
+        background: url(../images/280spinstab.jpg)no-repeat !important;
+        pointer-events: none;
+        background-position: center center;
+        background-color: #5d0183;
+    }
+
+    .lp-halloween-section-gamble__80spins_de {
+        background: url(../images/90spins-de-tab.jpg)no-repeat !important;
+        pointer-events: none;
+        background-position: center center;
+        background-color: #5d0183;
+    }
+
+    .lp-halloween-section-gamble__empty_de {
+        background: url(../images/empty-de-tab.jpg)no-repeat !important;
+        pointer-events: none;
+        background-position: center center;
+        background-color: #5d0183;
+    }
+
+    .lp-halloween-section-gamble__280spins_de {
+        background: url(../images/280spins-de-tab.jpg)no-repeat !important;
+        pointer-events: none;
+        background-position: center center;
+        background-color: #5d0183;
+    }
+
+    .lp-halloween-section-gamble__80spins_nl {
+        background: url(../images/90spins-nl-tab.jpg)no-repeat !important;
+        pointer-events: none;
+        background-position: center center;
+        background-color: #5d0183;
+    }
+
+    .lp-halloween-section-gamble__empty_nl {
+        background: url(../images/empty-nl-tab.jpg)no-repeat !important;
+        pointer-events: none;
+        background-position: center center;
+        background-color: #5d0183;
+    }
+
+    .lp-halloween-section-gamble__280spins_nl {
+        background: url(../images/280spins-nl-tab.jpg)no-repeat !important;
+        pointer-events: none;
+        background-position: center center;
+        background-color: #5d0183;
+    }
+
+    .lp-halloween-section-gamble__80spins_fi {
+        background: url(../images/90spins-fi-tab.jpg)no-repeat !important;
+        pointer-events: none;
+        background-position: center center;
+        background-color: #5d0183;
+    }
+
+    .lp-halloween-section-gamble__empty_fi {
+        background: url(../images/empty-fi-tab.jpg)no-repeat !important;
+        pointer-events: none;
+        background-position: center center;
+        background-color: #5d0183;
+    }
+
+    .lp-halloween-section-gamble__280spins_fi {
+        background: url(../images/280spins-fi-tab.jpg)no-repeat !important;
+        pointer-events: none;
+        background-position: center center;
+        background-color: #5d0183;
+    }
+
+    .lp-halloween-footer {
+        padding-top: 140px;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+
+    .lp-halloween-section-gamble {
+        background: url(../images/gambletablet.jpg)no-repeat;
+        border-bottom-right-radius: 34px;
+        border-bottom-left-radius: 59px;
+    }
+    .lp-halloween-section {
+        width: 734px;
+        min-height: 526px;
+    }
+    .lp-halloween-section-gamble-content-item1 {
+        border-top-left-radius: 16px;
+    }
+
+    .lp__container {
+        overflow: hidden;
+    }
+
+    .lp-halloween-section-gamble-content-item7 {
+
+        border-bottom-left-radius: 16px;
+    }
+
+    .lp-halloween-section-gamble-content-item9 {
+        border-bottom-right-radius: 16px;
+    }
+
+    .content1 {
+        background: url(../images/spider1tab.jpg)no-repeat;
+    }
+
+    .content2 {
+        background: url(../images/spider2tablet.jpg)no-repeat;
+    }
+
+    .content3 {
+        border-top-right-radius: 12px;
+        background: url(../images/spider3tablet.jpg)no-repeat;
+    }
+
+    .content4 {
+        background: url(../images/spider4tablet.jpg)no-repeat;
+    }
+
+    .content5 {
+        background: url(../images/spider5tablet.jpg)no-repeat;
+    }
+
+    .content6 {
+        background: url(../images/spider6tablet.jpg)no-repeat;
+    }
+
+    .content7 {
+        background: url(../images/spider7tablet.jpg)no-repeat;
+    }
+
+    .content8 {
+        background: url(../images/spider8tablet.jpg)no-repeat;
+    }
+
+    .content9 {
+        background: url(../images/spider9tablet.jpg)no-repeat;
+    }
+
+    .lp-halloween-section-gamble {
+        height: 526px;
+        padding: 25px 0 26px 0;
+    }
+
+    .lp-halloween-section-gamble-content {
+        max-width: 100%;
+    }
+
+    .lp-halloween-section-candles__before {
+        background: url(../images/svechialltablet.png);
+        width: 672px;
+        height: 85px;
+    }
+
+    .lp-halloween-section-candles__fire {
+        background: url(../images/svechi1firetablet.png);
+        width: 246px;
+        height: 95px;
+    }
+
+    .lp-halloween-section-candles__all {
+        background: url(../images/svechiallfiretablet.png);
+        width: 677px;
+        height: 109px;
+    }
+    .lp-halloween-section-candles__fire {
+        left: 28px;
+        top: -11px;
+    }
+    .lp-halloween-section-candles__all {
+        top: -22px;
+        right: 30px;
+    }
+    .lp-halloween-section-gamble-content {
+        margin-left: 5px;
+    }
+
+    .sticker {
+        width: 229px;
+        height: 169px;
+    }
+    .sticker .back {
+        top: 0;
+        overflow: hidden;
+    }
+    .sticker .back:before {
+        background-color: #50006f;
+        top: -169px;
+    }
+    .lp-halloween-section-gamble-content-item.selected .sticker {
+        transform: translate3d(10px, 20px, 0) scale(1.5) rotate(-45deg);
+        opacity: 0;
+    }
+    .lp-halloween-section-gamble-content-item.selected .sticker .front {
+        height: 0;
+    }
+    .lp-halloween-section-gamble-content-item.selected .sticker .back {
+        top: 130px;
+    }
+    .lp-halloween-section-gamble-content-item.selected .sticker .back:before {
+        top: 0;
+    }
+
+    .lp-halloween-section-gamble-content-item {
+        width: 230px;
+        height: 170px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .popup__window {
+        width: 300px;
+        min-height: 415px;
+    }
+
+    .lp-halloween-section-gamble-content {
+        margin-left: -5px;
+    }
+
+    .lp-halloween-section-gamble {
+        background: url(../images/gamble.jpg)no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .popup__header img {
+        max-width: 100%;
+        height: auto;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .popup-congrats {
+        font-size: 30px;
+    }
+
+    body, html {
+        overflow-x: hidden;
+    }
+
+    .popup-info {
+        padding-left: 7px;
+        padding-right: 7px;
+    }
+    .lp-halloween__logo {
+        padding-left: 14px;
+    }
+    .lp__container {
+        max-width: 100%;
+        padding: 0 5px;
+    }
+    .lp-halloween {
+        background: url(../images/767bg.jpg)no-repeat;
+        background-position: top center;
+        padding-top: 20px;
+    }
+    .lp-halloween__logo {
+        font-size: 22px;
+    }
+    .lp-halloween__text-elem {
+        font-size: 40px;
+    }
+    .lp-halloween__text:before {
+        width: 150px;
+        height: 150px;
+        left: 91px;
+    }
+    .lp-halloween__text-elem.w1 {
+        top: 4px;
+        left: 15px;
+        transform: rotate(-6.5rad);
+    }
+    .lp-halloween__text-elem.w2 {
+        left: 48px;
+        top: -4px;
+    }
+    .lp-halloween__text-elem.w3 {
+        left: 83px;
+        top: -8px;
+    }
+    .lp-halloween__text-elem.w4 {
+        left: 109px;
+        top: -12px;
+    }
+    .lp-halloween__text-elem.w5 {
+        top: -13px;
+        left: 136px;
+    }
+    .lp-halloween__text-elem.w6 {
+        top: -12px;
+        left: 170px;
+    }
+    .lp-halloween__text-elem.w7 {
+        left: 221px;
+        top: -9px;
+        transform: rotate(0.1rad);
+    }
+    .lp-halloween__text-elem.w8 {
+        top: -5px;
+        left: 249px;
+    }
+    .lp-halloween__text-elem.w9 {
+        top: 0;
+        left: 277px;
+    }
+    .lp-halloween__text-elem.w10 {
+        top: 46px;
+        left: 104px;
+    }
+    .lp-halloween__text-elem.w11 {
+        top: 45px;
+        left: 127px;
+    }
+    .lp-halloween__text-elem.w12 {
+        top: 43px;
+        left: 144px;
+    }
+    .lp-halloween__text-elem.w13 {
+        top: 44px;
+        left: 167px;
+    }
+    .lp-halloween__text-elem.w14 {
+        top: 46px;
+        left: 193px;
+    }
+
+
+    .lp-halloween__text-elem.w10.lp-halloween__text-elem-nl_w10 {
+        top: 48px;
+        left: 71px;
+    }
+
+    .lp-halloween__text-elem.w11.lp-halloween__text-elem-nl_w11 {
+        top: 40px;
+        left: 102px;
+    }
+
+    .lp-halloween__text-elem.w12.lp-halloween__text-elem-nl_w12 {
+        top: 37px;
+        left: 137px;
+    }
+
+    .lp-halloween__text-elem.w13.lp-halloween__text-elem-nl_w13 {
+        top: 36px;
+        left: 169px;
+    }
+
+    .lp-halloween__text-elem.w14.lp-halloween__text-elem-nl_w14 {
+        top: 38px;
+        left: 199px;
+    }
+
+    .lp-halloween__text-elem.w15.lp-halloween__text-elem-nl_w15 {
+        top: 45px;
+        left: 233px;
+    }
+
+    .lp-halloween__text-elem.w10.lp-halloween__text-elem-fi_w10 {
+        top: 51px;
+        left: 90px;
+    }
+
+    .lp-halloween__text-elem.w11.lp-halloween__text-elem-fi_w11 {
+        top: 45px;
+        left: 121px;
+    }
+
+    .lp-halloween__text-elem.w12.lp-halloween__text-elem-fi_w12 {
+        top: 41px;
+        left: 156px;
+    }
+
+    .lp-halloween__text-elem.w13.lp-halloween__text-elem-fi_w13 {
+        top: 43px;
+        left: 191px;
+    }
+
+    .lp-halloween__text-elem.w14.lp-halloween__text-elem-fi_w14 {
+        top: 48px;
+        left: 218px;
+    }
+
+    .lp-halloween__text-elem.w10.lp-halloween__text-elem-de_w10 {
+        top: 49px;
+        left: 53px;
+        transform: rotate(-6.4rad);
+    }
+
+    .lp-halloween__text-elem.w11.lp-halloween__text-elem-de_w11 {
+        top: 45px;
+        left: 83px;
+    }
+
+    .lp-halloween__text-elem.w12.lp-halloween__text-elem-de_w12 {
+        top: 41px;
+        left: 111px;
+    }
+
+    .lp-halloween__text-elem.w13.lp-halloween__text-elem-de_w13 {
+        top: 40px;
+        left: 143px;
+    }
+
+    .lp-halloween__text-elem.w14.lp-halloween__text-elem-de_w14 {
+        top: 40px;
+        left: 174px;
+    }
+
+    .lp-halloween__text-elem.w15.lp-halloween__text-elem-de_w15 {
+        top: 40px;
+        left: 208px;
+    }
+
+    .lp-halloween__text-elem.w16.lp-halloween__text-elem-de_w16 {
+        top: 44px;
+        left: 233px;
+    }
+
+    .lp-halloween__text-elem.w17.lp-halloween__text-elem-de_w17 {
+        top: 51px;
+        left: 264px;
+    }
+
+    .lp-halloween-section-gamble__speach {
+        top: -267px;
+        right: 101px;
+    }
+    .lp-halloween-section {
+        margin-top: 117px;
+    }
+    .lp-halloween-section {
+        width: 525px;
+    }
+    .lp-halloween-section-candles__all {
+        right: 3px;
+    }
+    .lp-halloween-section {
+        margin-top: 92px;
+    }
+    .lp-halloween-section-gamble {
+        padding: 27px 11px 15px 21px;
+    }
+    .lp-halloween-section-gamble-content-item {
+        width: 161px;
+        height: auto;
+    }
+    .lp-halloween__info {
+        padding-top: 15px;
+    }
+    .lp-halloween-section-candles__before {
+        background: url(../images/svechiallmob.png)no-repeat;
+    }
+    .lp-halloween-section-candles__fire {
+        background: url(../images/svechi1mob.png)no-repeat;
+        left: 0;
+        position: absolute;
+        top: -13px;
+    }
+    .lp-halloween-section-candles__all {
+        background: url(../images/svechiallfiremob.png)no-repeat;
+        right: -33px;
+    }
+    .lp-halloween-footer-row__item {
+        max-width: 120px;
+    }
+    .lp-halloween-section-candles {
+        left: 8px;
+    }
+
+    .lp-halloween-section-gamble-content-item9, .content9 {
+        border-bottom-right-radius: 8px;
+    }
+
+    .lp-halloween-section-gamble-content-item1, .content1 {
+        border-top-left-radius: 8px;
+    }
+
+    .lp-halloween-section-gamble-content-item3, .content3 {
+        border-top-right-radius: 8px;
+    }
+
+    .lp-halloween-section-gamble-content-item7, .content7 {
+        border-bottom-left-radius: 8px;
+    }
+
+    .lp-halloween-section-gamble-content {
+        height: 344px;
+    }
+    .lp-halloween-section-gamble {
+        padding: 26px 11px 17px 20px;
+        height: 350px;
+    }
+    .lp-halloween-section-gamble__80spins {
+        background: url(../images/90spinsmob.jpg)no-repeat !important;
+        pointer-events: none;
+        background-size: cover !important;
+        background-color: #5d0183;
+    }
+
+    .lp-halloween-section-gamble__empty {
+        background: url(../images/empty767.jpg)no-repeat !important;
+        pointer-events: none;
+        background-size: cover !important;
+        background-color: #5d0183;
+    }
+
+    .lp-halloween-section-gamble__280spins {
+        background: url(../images/280spinsmob.jpg)no-repeat !important;
+        pointer-events: none;
+        background-size: cover !important;
+        background-color: #5d0183;
+    }
+
+    .lp-halloween-section-gamble__80spins_de {
+        background: url(../images/90spins-de-mob.jpg)no-repeat !important;
+        pointer-events: none;
+        background-size: cover !important;
+        background-color: #5d0183;
+    }
+
+    .lp-halloween-section-gamble__empty_de {
+        background: url(../images/empty-de-mob.jpg)no-repeat !important;
+        pointer-events: none;
+        background-size: cover !important;
+        background-color: #5d0183;
+    }
+
+    .lp-halloween-section-gamble__280spins_de {
+        background: url(../images/280spins-de-mob.jpg)no-repeat !important;
+        pointer-events: none;
+        background-size: cover !important;
+        background-color: #5d0183;
+    }
+
+    .lp-halloween-section-gamble__80spins_nl {
+        background: url(../images/90spins-nl-mob.jpg)no-repeat !important;
+        pointer-events: none;
+        background-size: cover !important;
+        background-color: #5d0183;
+    }
+
+    .lp-halloween-section-gamble__empty_nl {
+        background: url(../images/empty-nl-mob.jpg)no-repeat !important;
+        pointer-events: none;
+        background-size: cover !important;
+        background-color: #5d0183;
+    }
+
+    .lp-halloween-section-gamble__280spins_nl {
+        background: url(../images/280spins-nl-mob.jpg)no-repeat !important;
+        pointer-events: none;
+        background-size: cover !important;
+        background-color: #5d0183;
+    }
+
+    .lp-halloween-section-gamble__80spins_fi {
+        background: url(../images/90spins-fi-mob.jpg)no-repeat !important;
+        pointer-events: none;
+        background-size: cover !important;
+        background-color: #5d0183;
+    }
+
+    .lp-halloween-section-gamble__empty_fi {
+        background: url(../images/empty-fi-mob.jpg)no-repeat !important;
+        pointer-events: none;
+        background-size: cover !important;
+        background-color: #5d0183;
+    }
+
+    .lp-halloween-section-gamble__280spins_fi {
+        background: url(../images/280spins-fi-mob.jpg)no-repeat !important;
+        pointer-events: none;
+        background-size: cover !important;
+        background-color: #5d0183;
+    }
+
+    .lp-halloween-footer {
+        padding-top: 120px;
+    }
+
+    .popup__window {
+        min-height: 389px;
+    }
+
+    .lp-halloween-section-gamble__hand {
+        display: none;
+    }
+
+    .lp-halloween-section-gamble__tykva {
+        display: none;
+    }
+    .lp-halloween-section-candles {
+        pointer-events: none;
+    }
+    .content1 {
+        background: url(../images/spider1mob.jpg)no-repeat;
+    }
+
+    .content2 {
+        background: url(../images/spider2mob.jpg)no-repeat;
+    }
+
+    .content3 {
+        border-top-right-radius: 12px;
+        background: url(../images/spider3mob.jpg)no-repeat;
+    }
+
+    .content4 {
+        background: url(../images/spider4mob.jpg)no-repeat;
+    }
+
+    .content5 {
+        background: url(../images/spider5mob.jpg)no-repeat;
+    }
+
+    .content6 {
+        background: url(../images/spider6mob.jpg)no-repeat;
+    }
+
+    .content7 {
+        background: url(../images/spider7mob.jpg)no-repeat;
+    }
+
+    .content8 {
+        background: url(../images/spider8mob.jpg)no-repeat;
+    }
+
+    .content9 {
+        background: url(../images/spider9mob.jpg)no-repeat;
+    }
+
+    .lp-halloween-section-gamble-content-item1.selected {
+        border-bottom: 2px solid #50006f;
+        border-right: 2px solid #50006f;
+    }
+
+    .lp-halloween-section-gamble-content-item2.selected {
+        border-bottom: 2px solid #50006f;
+        border-right: 2px solid #50006f;
+    }
+
+    .lp-halloween-section-gamble-content-item3.selected {
+        border-bottom: 2px solid #50006f;
+    }
+
+    .lp-halloween-section-gamble-content-item4.selected {
+        border-bottom: 2px solid #50006f;
+        border-right: 2px solid #50006f;
+    }
+
+    .lp-halloween-section-gamble-content-item5.selected {
+        border-right: 2px solid #50006f;
+        border-bottom: 2px solid #50006f;
+    }
+
+    .lp-halloween-section-gamble-content-item6.selected {
+        border-bottom: 2px solid #50006f;
+    }
+
+    .lp-halloween-section-gamble-content-item7.selected {
+        border-right: 2px solid #50006f;
+    }
+
+    .lp-halloween-section-gamble-content-item8.selected {
+        border-right: 2px solid #50006f;
+    }
+
+    .sticker {
+        width: 161px;
+        height: 115px;
+    }
+    .lp-halloween__text:before {
+        left: 88px;
+        transform: scale(0.92);
+        top: -23px;
+    }
+    .lp-halloween__text-elem {
+        padding-top: 8px;
+    }
+    .lp-halloween-section-gamble-content-item {
+        width: 162px;
+        height: 116px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .lp-halloween-section-bar {
+        left: 0;
+    }
+    .lp-halloween__attempt {
+        padding-left: 30px;
+    }
+    .lp-halloween-footer-copyright-row__item_img:first-child {
+        padding-left: 0;
+    }
+    .lp-halloween-footer-copyright-row__item_license {
+        margin-right: 12px;
+    }
+    .lp-halloween-footer-copyright-row__item-text {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .lp-halloween-footer-copyright-row__item_license {
+        margin-right: 14px;
+    }
+    .lp-halloween-section-candles__before {
+        transform: scale(0.95);
+        background: url(../images/svechiallmob.png)no-repeat;
+        background-size: contain;
+        width: 100%;
+    }
+    .lp-halloween-section-candles__fire {
+        transform: scale(0.95);
+        left: 5px;
+        background-size: contain;
+        top: -16px;
+    }
+
+    .lp-halloween-section-candles__all {
+        transform: scale(0.95);
+        background-size: contain;
+        width: 100%;
+        right: 1px;
+        top: -19px;
+    }
+}
+
+    @media screen and (max-width: 540px) {
+        .lp-halloween-section {
+            transform: scale(0.95);
+        }
+
+        .lp-halloween-section-gamble__speach {
+            top: -298px;
+        }
+
+        .lp-halloween-section {
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 520px) {
+        .lp-halloween-section {
+            transform: scale(0.95);
+        }
+        .lp-halloween-section-gamble-content-item {
+            width: 33%;
+            height: 117px;
+        }
+
+        .lp-halloween-section-gamble-content {
+            height: 345px;
+        }
+
+        .lp-halloween-section-gamble {
+            height: 352px;
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        .lp-halloween-section-candles__before {
+            transform: scale(0.9);
+        }
+        .lp-halloween-section-candles__fire {
+            transform: scale(0.8);
+            left: 5px;
+            top: -16px;
+        }
+        .sticker {
+            width: 100%;
+            height: auto;
+        }
+        .lp-halloween-section-candles__all {
+            transform: scale(0.9);
+            right: -3px;
+            top: -16px;
+        }
+        .lp-halloween-section-candles {
+            top: 5px;
+            left: 3px;
+        }
+        .content {
+            background-size: cover;
+        }
+        .lp-halloween-section-gamble {
+            height: 348px;
+        }
+        .lp-halloween-section-gamble {
+            padding-top: 20px;
+        }
+        .lp-halloween {
+            padding-top: 8px;
+        }
+
+    }
+
+    @media screen and (max-width: 420px) {
+        .lp-halloween {
+            background-size: 190%;
+        }
+
+        .lp-halloween__text {
+            margin: 19px auto 11px;
+            transform: scale(0.8);
+        }
+
+        .lp-halloween-section {
+            margin-top: 70px;
+        }
+
+        .lp-halloween-section-gamble {
+            padding-top: 17px;
+        }
+
+        .lp-halloween-section-gamble__speach {
+            right: 55px;
+            top: -256px;
+        }
+
+        .lp-halloween-footer {
+            padding-top: 90px;
+        }
+        .lp-halloween-section-candles {
+            top: 16px;
+            left: 3px;
+        }
+        .lp-halloween-section-gamble {
+            height: 263px;
+        }
+    }
+
+    @media screen and (max-width: 414px) {
+        .lp-halloween-section-gamble-content-item {
+            background-size: 100%;
+            height: auto;
+        }
+
+        .lp-halloween-section-gamble-content {
+            height: 269px;
+        }
+
+        .lp-halloween-section-gamble {
+            height: 268px;
+        }
+
+        .lp-halloween-section-candles__fire {
+            transform: scale(0.7);
+            left: -11px;
+            top: -21px;
+        }
+        .lp-halloween-section-candles__all {
+            right: 0;
+        }
+    }
+
+    @media screen and (max-width: 400px) {
+        .lp-halloween-section-gamble {
+            height: 239px;
+        }
+        .lp-halloween-section-gamble-content {
+            height: 243px;
+        }
+        .lp-halloween-section {
+            margin-top: 48px;
+        }
+        .lp-halloween-footer {
+            padding-top: 70px;
+        }
+        .lp-halloween-section-gamble__speach {
+            right: 42px;
+            top: -240px;
+        }
+        .lp-halloween-section-candles__fire {
+            left: -23px;
+            top: -21px;
+            transform: scale(0.65);
+        }
+        .lp-halloween-section-candles__all {
+            top: -13px;
+        }
+        .lp-halloween__text {
+            margin-top: 6px;
+        }
+        .lp-halloween-section {
+            margin-top: 60px;
+        }
+    }
+
+
+@media screen and (max-width: 374px) {
+
+    .lp-halloween-section-gamble-content {
+        height: 233px;
+    }
+
+    .lp-halloween-section-gamble {
+        height: 229px;
+    }
+
+    .lp-halloween-section {
+        margin-top: 27px;
+    }
+
+    .lp-halloween-section-gamble__speach {
+        right: 27px;
+        top: -216px;
+    }
+    .lp-halloween-section-candles__fire {
+        transform: scale(0.6);
+    }
+}
+
+@media screen and (max-width: 359px) {
+    .popup-congrats:after, .popup-congrats:before {
+        display: none;
+    }
+    .lp-halloween-footer-copyright-row__item_img {
+        width: 30%;
+    }
+    .lp-halloween-footer-copyright-row__item:last-child {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .lp-halloween-footer-copyright-row {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .lp-halloween-section-gamble {
+        height: 200px;
+        padding-top: 14px;
+    }
+    .lp-halloween-section-gamble-content {
+        height: 205px;
+    }
+    .lp-halloween-section-bar {
+        width: 250px;
+        padding-top: 7px;
+        padding-bottom: 5px;
+    }
+    .lp-halloween-section-bar__text {
+        font-size: 19px;
+    }
+    .lp-halloween-section-bar__text_fi {
+        font-size: 18px;
+    }
+    .lp-halloween__attempt {
+        font-size: 15px;
+    }
+    .lp-halloween__attempt-number_first {
+        margin-left: 6px;
+    }
+    .lp-halloween-section {
+        margin-top: 17px;
+    }
+    .lp-halloween__info {
+        padding-top: 2px;
+    }
+    .lp-halloween-section-candles {
+        top: 21px;
+    }
+    .lp-halloween-section-candles__fire {
+        left: -34px;
+        top: -24px;
+        transform: scale(0.54);
+    }
+    .lp-halloween-section-candles__all {
+        top: -11px;
+    }
+    .lp-halloween-section-gamble__speach {
+        right: -14px;
+        top: -208px;
+        transform: scale(0.8);
+    }
+}
+
